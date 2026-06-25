@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokang Ngwetjana | Portfolio</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #4ba4ed;
+            color: rgb(245, 245, 245);
+        }
+
+        nav {
+            background: #d4d0d4;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white !important;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #38BDF8 !important;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero img {
+            width: 350px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .hero span {
+            color: #38BDF8;
+        }
+
+        .btn-custom {
+            background: #38BDF8;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .btn-custom:hover {
+            background: #0ea5e9;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            color: #38BDF8;
+            font-weight: bold;
+        }
+
+        .skill-card,
+        .project-card {
+            background: #1E293B;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            transition: .3s;
+        }
+
+        .skill-card:hover,
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #111827;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .contact-box {
+            background: #1E293B;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        @media(max-width:768px) {
+
+            .hero {
+                text-align: center;
+            }
+
+            .hero img {
+                width: 250px;
+                margin-bottom: 20px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                Bokang Ngwetjana
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HERO -->
+
+    <section id="home" class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-5 text-center">
+
+                    <img src="bokang.jpeg" alt="Bokang Ngwetjana">
+
+                </div>
+
+                <div class="col-lg-7">
+
+                    <h1>
+                        Hi, I'm <span>Bokang Ngwetjana</span>
+                    </h1>
+
+                    <h3 class="mt-3">
+                        Final Year Multimedia Computing Student
+                    </h3>
+
+                    <p class="mt-4">
+                        Passionate about Web Development,
+                        UI/UX Design, Mobile Applications,
+                        3D Modelling, Animation, Motion Graphics
+                        and Interactive Digital Experiences.
+                    </p>
+
+                    <a href="#projects" class="btn-custom">
+                        View Projects
+                    </a>
+
+                    <a href="BokangCV.pdf" class="btn-custom">
+                        Download CV
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+
+            <p class="text-center">
+
+                I am a final-year Multimedia Computing student at Tshwane University of Technology.
+                My academic journey has equipped me with skills in software development,
+                web technologies, mobile development, 3D modelling, animation,
+                motion graphics and user experience design.
+
+                I enjoy combining creativity and technology to create digital solutions
+                that are both functional and visually engaging.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Technical Skills</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <h4>Programming</h4>
+                        <ul>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>Kotlin</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <h4>Multimedia</h4>
+                        <ul>
+                            <li>Unity</li>
+                            <li>Blender</li>
+                            <li>3D Animation</li>
+                            <li>Motion Graphics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <h4>Adobe Suite</h4>
+                        <ul>
+                            <li>Photoshop</li>
+                            <li>After Effects</li>
+                            <li>UI Design</li>
+                            <li>UX Design</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Projects</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="project-card">
+
+                        <h4>Portfolio Website</h4>
+
+                        <p>
+                            Personal portfolio website developed using
+                            HTML, CSS, Bootstrap and JavaScript.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="project-card">
+
+                        <h4>VR Gym Experience</h4>
+
+                        <p>
+                            Virtual Reality fitness experience built
+                            using Unity and immersive interaction concepts.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="project-card">
+
+                        <h4>Fitness Mobile App</h4>
+
+                        <p>
+                            Mobile application prototype designed using
+                            Kotlin and Android Studio.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="project-card">
+
+                        <h4>3D Gaming Room</h4>
+
+                        <p>
+                            3D environment created using Blender,
+                            including modelling, texturing and lighting.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EDUCATION -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Education & Experience</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="skill-card">
+
+                        <h4>Education</h4>
+
+                        <p>
+                            Diploma in Multimedia Computing
+                        </p>
+
+                        <p>
+                            Tshwane University of Technology
+                        </p>
+
+                        <p>
+                            2023 - Present
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="skill-card">
+
+                        <h4>Experience</h4>
+
+                        <p>
+                            Teacher Assistant
+                        </p>
+
+                        <p>
+                            Segole Primary School
+                        </p>
+
+                        <p>
+                            June 2022 – March 2023
+                        </p>
+
+                        <hr>
+
+                        <p>
+                            CompTIA A+ Certified
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Contact Me</h2>
+            </div>
+
+            <div class="contact-box text-center">
+
+                <h4>Email</h4>
+                <p>pebetsibokang02@gmail.com</p>
+
+                <h4>Phone</h4>
+                <p>064 736 3685</p>
+
+                <h4>Location</h4>
+                <p>Gauteng, South Africa</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 Bokang Ngwetjana | Multimedia Computing Portfolio
+        </p>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
